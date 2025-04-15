@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zaka 27 Wrocław</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <img src="images/img10.jpg" alt="Mieszkanie" class="hero-img">
+    <h1>Sprzedaż mieszkania - ul. Żaka 27</h1>
+  </header>
+
+  <section class="details">
+    <section class="details-grid">
+        <div class="detail-item">
+          <h3>Adres</h3>
+          <p>ul. Zaka 27 Wrocław</p>
+        </div>
+        <div class="detail-item">
+          <h3>Powierzchnia całkowita:</h3>
+          <p>262m²</p>
+        </div>
+        <div class="detail-item">
+          <h3>Rok budowy</h3>
+          <p>2020</p>
+        </div>
+        <div class="detail-item">
+          <h3>Piwnica</h3>
+          <p>56,6 m²</p>
+        </div>
+        <div class="detail-item">
+          <h3>Parter</h3>
+          <p>104 m²</p>
+        </div>
+        <div class="detail-item">
+          <h3>Piętro</h3>
+          <p>101,4 m²</p>
+        </div>
+        <div class="detail-item">
+            <h3>Numer działki:</h3>
+            <p>91</p>
+          </div>
+          <div class="detail-item">
+            <h3>Powierzchnia działki:</h3>
+            <p>0,03ha</p>
+          </div>
+          <div class="detail-item">
+            <h3>Identyfikator działki:
+            </h3>
+            <p>026401_1.0002.AR_4.91</p>
+          </div>
+      </section>
+  </section>
+
+  <section class="gallery">
+    <h2>Galeria</h2>
+    <div class="gallery-grid">
+      <img src="images/img1.jpg" alt="Zdjęcie 1" onclick="openModal(this.src)">
+      <img src="images/img2.jpg" alt="Zdjęcie 2" onclick="openModal(this.src)">
+      <img src="images/img3.jpg" alt="Zdjęcie 3" onclick="openModal(this.src)">
+      <img src="images/img4.jpg" alt="Zdjęcie 4" onclick="openModal(this.src)">
+      <img src="images/img5.jpg" alt="Zdjęcie 5" onclick="openModal(this.src)">
+      <img src="images/img6.jpg" alt="Zdjęcie 6" onclick="openModal(this.src)">
+      <img src="images/img7.jpg" alt="Zdjęcie 7" onclick="openModal(this.src)">
+      <img src="images/img8.jpg" alt="Zdjęcie 8" onclick="openModal(this.src)">
+      <img src="images/img9.jpg" alt="Zdjęcie 9" onclick="openModal(this.src)">
+      <img src="images/img10.jpg" alt="Zdjęcie 7" onclick="openModal(this.src)">
+      <img src="images/img11.jpg" alt="Zdjęcie 8" onclick="openModal(this.src)">
+      <img src="images/img12.jpg" alt="Zdjęcie 9" onclick="openModal(this.src)">
+    </div>
+  </section>
+
+  <section class="plans">
+    <h2>Rzuty mieszkania</h2>
+    <div class="pdf-grid">
+        <a href="pdf/rzut_piwnica.pdf" target="_blank" class="pdf-tile">Rzut – Piwnica</a>
+        <a href="pdf/rzut_parter.pdf" target="_blank" class="pdf-tile">Rzut – Parter</a>
+        <a href="pdf/rzut_pietro.pdf" target="_blank" class="pdf-tile">Rzut – Piętro</a>
+        <a href="pdf/dzialka_info.pdf" target="_blank" class="pdf-tile">Informacje o działce</a>
+      </div>
+  </section>
+
+  <section class="map-section">
+    <h2>Lokalizacja</h2>
+    <div class="map-container">
+      <a href="https://www.google.com/maps/place/Eugeniusza+Żaka+27,+Wrocław" target="_blank">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2463.710111650531!2d17.003998415978773!3d51.11557494377101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe98d008c2e37%3A0xa95d3ae63d5b8dc6!2sEugeniusza%20%C5%BBaka%2027%2C%2051-421%20Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1713201684502!5m2!1spl!2spl" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <h2>Kontakt</h2>
+    <p>Email: <a href="mailto:random@wp.pl">random@wp.pl</a></p>
+    <p>Telefon: <a href="tel:123456789">123 456 789</a></p>
+  </footer>
+
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modal-img" src="" alt="Zdjęcie powiększone">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
