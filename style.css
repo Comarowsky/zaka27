@@ -263,3 +263,31 @@ html, body {
   font-weight: bold;
   margin: 0.5rem 0 0;
 }
+
+.scroll-down {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  animation: bounce 2s infinite;
+}
+
+.scroll-down span {
+  font-size: 3rem;
+  color: white;
+  opacity: 0.8;
+}
+
+/* Efekt „podskakiwania” */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(5px);
+  }
+}
