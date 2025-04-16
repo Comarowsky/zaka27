@@ -29,15 +29,17 @@ body {
   }
 
   .hero h1 {
-    position: relative;
-    z-index: 2;
-    color: white;
-    font-size: 14rem;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    font-weight: 750;
-    margin: 0;
-  }
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: clamp(2.5rem, 10vw, 8rem);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 750;
+  margin: 0;
+  padding: 0 1rem;
+  word-break: break-word;
+}
 
   .overlay {
     position: absolute;
@@ -241,3 +243,23 @@ body {
     color: #222;
     font-weight: 700;
   }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.price-text {
+  text-align: center;
+}
+
+.price-text h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.price-text p {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0.5rem 0 0;
+}
