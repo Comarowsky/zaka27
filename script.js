@@ -11,3 +11,9 @@ function openModal(src) {
     modal.classList.remove('show');
     document.body.style.overflow = 'auto';
   }
+
+document.getElementById('modal').addEventListener('click', function (e) {
+  const modalImg = document.getElementById('modal-img');
+  if (!modalImg.contains(e.target)) {
+    closeModal();
+  }
