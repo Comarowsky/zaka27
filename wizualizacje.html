@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wizualizacje - Zaka 27</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <img src="images/imgs1.jpg" alt="Tło" class="hero-img">
+    <div class="overlay"></div>
+    <h1>Wizualizacje</h1>
+  </header>
+
+  <section class="gallery">
+    <h2>Wizualizacje</h2>
+    <div class="gallery-grid">
+      <img src="images/w1.jpg" alt="Wizualizacja 1" onclick="openModal(this.src)">
+      <img src="images/w2.jpg" alt="Wizualizacja 2" onclick="openModal(this.src)">
+      <img src="images/w3.jpg" alt="Wizualizacja 3" onclick="openModal(this.src)">
+      <img src="images/w4.jpg" alt="Wizualizacja 4" onclick="openModal(this.src)">
+      <img src="images/w5.jpg" alt="Wizualizacja 5" onclick="openModal(this.src)">
+      <img src="images/w6.jpg" alt="Wizualizacja 6" onclick="openModal(this.src)">
+      <img src="images/w7.jpg" alt="Wizualizacja 7" onclick="openModal(this.src)">
+      <img src="images/w8.jpg" alt="Wizualizacja 8" onclick="openModal(this.src)">
+      <img src="images/w9.jpg" alt="Wizualizacja 9" onclick="openModal(this.src)">
+      <img src="images/w10.jpg" alt="Wizualizacja 10" onclick="openModal(this.src)">
+      <img src="images/w11.jpg" alt="Wizualizacja 11" onclick="openModal(this.src)">
+      <img src="images/w12.jpg" alt="Wizualizacja 12" onclick="openModal(this.src)">
+    </div>
+  </section>
+
+  <footer>
+    <h2>Kontakt</h2>
+    <p>Email: <a href="mailto:biuro@multipb.pl">biuro@multipb.pl</a></p>
+    <p>Telefon: <a href="tel:509830831">509 830 831</a></p>
+  </footer>
+
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modal-img" src="" alt="Zdjęcie powiększone">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
